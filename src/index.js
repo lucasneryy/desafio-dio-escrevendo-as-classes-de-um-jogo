@@ -1,5 +1,7 @@
 class dadosHeroi{
     constructor(nome, idade, tipo, ataque){
+        this.nome = nome
+        this.idade = idade
         this.tipo = tipo
     }
 
@@ -26,10 +28,10 @@ class dadosHeroi{
                 break;
         }
         
-        console.log(`o ${this.tipo} atacou usando ${this.ataque}`)
+        console.log(`o ${this.tipo} "${this.nome}", (${this.idade}) atacou usando ${this.ataque}`)
             
     }
 }
 
-let heroi = new dadosHeroi("seu ze", 32, "ninja")
+let heroi = new dadosHeroi("seu ze", 32, "mago")
 heroi.atacar()
